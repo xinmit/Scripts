@@ -25,7 +25,7 @@ def add_noise(x,z,snr):
     rms_z = np.sqrt( np.mean(np.power(z,2)))
     rms_x = np.sqrt( np.mean(np.power(x,2)))
 
-    snr_linear = 10 ** (0.005 * snr)
+    snr_linear = 10 ** (0.05 * snr)
     noise_factor = rms_x / rms_z /snr_linear;
 
     
